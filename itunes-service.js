@@ -1,5 +1,6 @@
 function ItunesService(){
 
+
     this.getMusicByArtist = function(artist) {
 
       //allows requests to localhost: 8080 otherwise blocked by itunes
@@ -24,5 +25,9 @@ function ItunesService(){
         $('#get-music-button').text('GET MUSIC');
         return songList;
       })
+    }
+    
+    this.addSong= function addSong(song){
+      var newSong= new song(song.title, song.albumArt, song.artist,song.collection,song.price,song.preview)
     }
 }
