@@ -14,12 +14,14 @@ function ItunesController(){
     for (var i = 0; i < songs.length; i++) {
       var song = songs[i];
       template+=`<div>
-      <h3>Title: ${song.title}</h3>
-        <img src="song.img" alt="">
+      <h3>    Title: ${song.title}</h3>
+        <img src="${song.albumArt}" alt="">
         <h3>Artist: ${song.artist}</h3>
         <h3>Collection:${song.collection}</h3>
         <h3>Price: ${song.price}</h3>
-        <audio src="song.preview"></audio>
+        <audio controls= "controls">
+  <source src="${song.preview}" type="audio/aac">
+  </audio>
       </div>`
       
     }

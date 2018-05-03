@@ -7,26 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Is Fun!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/main.css">
 
 </head>
 
 <body>
-    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-        <div class="form-group">
-            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
-        </div>
-    </form>
-    <div id="songs">
-        <!-- <h3>Title:</h3>
-        <img src="song.img" alt="">
-        <h3>Artist: </h3>
-        <h3>Collection:</h3>
-        <h3>Price: </h3>
-        <audio src="song.preview"></audio> -->
+    <section class="container-fluid">
+        <div class="row">
 
+            <div class="col-6">
+
+                <img class="background justify-content-center" src="clouds.jpg" alt="">
+
+        <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+            <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+            <div class="form-group">
+                <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+            </div>
+        </form>
+        <div id="songs">
+            <!-- <h3>Title:</h3>
+            <img src="song.img" alt="">
+            <h3>Artist: </h3>
+            <h3>Collection:</h3>
+            <h3>Price: </h3>
+            <audio src="song.preview"></audio> -->
+    
+        </div>
     </div>
+    </div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="itunes-service.js"></script>
     <script src="itunes-controller.js"></script>

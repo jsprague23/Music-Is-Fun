@@ -28,6 +28,6 @@ function ItunesService(){
     }
     
     this.addSong= function addSong(song){
-      var newSong= new song(song.title, song.albumArt, song.artist,song.collection,song.price,song.preview)
+      var newSong= new song(song.title, song.albumArt, song.artist, song.collection, song.price, song.preview)
     }
 }
