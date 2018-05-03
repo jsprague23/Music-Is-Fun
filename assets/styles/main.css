@@ -1,13 +1,19 @@
-body, html {
+/* body, html {
     height: 100%;
   }
   
   * {
     box-sizing: border-box;
-  }
+  } */
+.padding{
+  padding: 10vh, 10vh, 10vh, 10vh;
+  justify-content: center;
+}
 
 .background {
-    background-repeat: repeat ;
+    background-image: url("../clouds.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 50%;
     display: block;
     margin-left: auto;
@@ -16,9 +22,10 @@ body, html {
 }
 
 .container {
-    position: absolute;
+  
+    position: fixed;
     right: 0;
-    margin: 20px;
+    margin: 100px;
     max-width: 300px;
     padding: 16px;
     background-color: white;
@@ -33,24 +40,28 @@ input[type=text], input[type=password] {
   }
   
 
-input[type=text]:focus, input[type=password]:focus {
+/* input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
-  }
+  } */
 
 
 
 .btn {
-    background-color: #4CAF50;
+    background-color: #ff4057;
     color: white;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 75%;
     opacity: 0.9;
   }
 
   .btn:hover {
-    opacity: 1;
+    opacity: 2;
   }
 
+.text {
+  justify-content: center;
+  color: #900048;
+}
